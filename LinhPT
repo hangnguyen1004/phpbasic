@@ -1,0 +1,40 @@
+Bài 1
+
+$a=10;
+$b=20;
+$c= $a+$b;
+
+echo "Tổng hai số a và b là $c";
+
+Bài 2
+
+$b=0;
+$c=0;
+
+for($a=1;$a<101;$a++)
+{
+  if($a%2==0)
+      $b+=$a;
+  else
+      $c+=$a;
+}
+
+echo "Tổng số chẵn của dãy trên là $b <br>";
+echo "Tổng số lẽ của dãy trên là $c";
+
+Bài 3
+$a = 6;
+$b = 10;
+$c = 2;
+
+$delta = $b*$b-4*$a*$c;
+$x1=(-$b + sqrt($delta))/(2*$a);
+$x2=(-$b - sqrt($delta))/(2*$a);
+$x3= -$b/(2*$a);
+  
+if ($delta<0)
+  echo "Phương trình vô nghiệm";
+if ($delta>0)
+  echo "Phương trình có 2 nghiệm x1=$x1 và x2=$x2";
+if ($delta==0)
+  echo "Phương trình có 2 nghiệm kép x1 = x2 = $x3";
